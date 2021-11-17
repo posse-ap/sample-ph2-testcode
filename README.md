@@ -38,3 +38,15 @@ vendor/bin/phpunit test
 
 答え合わせしてください
 
+### practice-3
+
+test/FizzBuzzTest.phpを見てみてください
+
+FizzBuzzを題材にしています
+今度はテストを予めhashimotoが書いておきました
+
+src/FizzBuzz.phpにテストが通るように実装してみてください
+
+実装したのちにphpunitを走らせた結果、全てのテストが通ればokです
+
+答えはpractice-4ブランチにあります
