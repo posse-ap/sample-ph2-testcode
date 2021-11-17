@@ -55,4 +55,23 @@ class CalculationTest extends TestCase
   // テストは以下の3ケースとする
   // 正常系 @example 4 ÷ 2 = 2 -> 関数が返す値と期待する結果が一致することを確認するテストを書く
   // 異常系 @example 4 ÷ 0　　　-> 例外を発生させて、例外が発生することを確認するテストを書く。例外クラスはDivisionByZeroErrorとする
+
+  // Sample Answer
+  public function testDivision()
+  {
+    $result = division(4, 2);
+    $this->assertEquals(2, $result);
+  }
+
+  // 0割の場合だとわかるtest名にする
+  public function testZeroDivision()
+  {
+    // DivisionByZeroErrorクラスが投げられることを確認する
+    $this->expectException(DivisionByZeroError::class);
+    // 例外のエラーメッセージが一致することを確認する
+    $this->expectExceptionMessage("zero division");
+
+    // NOTE: 上のexpect文より先にdivisionを呼び出すとテスト失敗する
+    division(4, 0);
+  }
 }

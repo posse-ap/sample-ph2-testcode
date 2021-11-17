@@ -34,4 +34,7 @@ vendor/bin/phpunit test
 
 答えはpractice-2ブランチにあります
 
+### practice-2
+
+答え合わせしてください
 
