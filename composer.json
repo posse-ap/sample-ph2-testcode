@@ -1,0 +1,12 @@
+{
+    "name": "mitsuru/sample-ph2-testcode",
+    "authors": [
+        {
+            "name": "Mitsuru Hashimoto",
+            "email": "exhikii@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
